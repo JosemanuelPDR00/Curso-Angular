@@ -1,0 +1,27 @@
+<!-- Titulo dinámico -->
+<h1 class="text-center m-5">{{title}}</h1>
+
+  <!-- calculadora -->
+  <div class="container mb-3 ">
+
+    <form>
+      
+      <p class="fw-bold">Número 1:</p>
+      <input type="number" name="numero1" [(ngModel)]="numero1" class="form-control border border-3 border-primary"><br><br>
+      
+      <p class="fw-bold">Número 2:</p>
+      <input type="number" name="numero2" [(ngModel)]="numero2" class="form-control border border-3 border-primary"><br><br>
+      
+      <div class="btn-group" role="group">
+        <input type="submit" value="Sumar" (click)="sumar()" class="btn btn-outline-primary">
+        <input type="submit" value="Restar" (click)="restar()" class="btn btn-outline-primary">
+        <input type="submit" value="Multiplicar" (click)="multiplicar()" class="btn btn-outline-primary">
+        <input type="submit" value="Dividir" (click)="dividir()" class="btn btn-outline-primary">
+      </div>
+
+    </form>
+    
+  </div>
+
+  <p class="text-center fs-3 fw-bold">RESULTADO: {{resultado}}</p>
+  <p class="text-center fs-3 fw-bold color link-primary text-center mt-5">JOSEMA PEREZ</p>
